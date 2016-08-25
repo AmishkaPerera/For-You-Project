@@ -5,6 +5,9 @@ using UnityEngine.EventSystems; // include EventSystems namespace so can set ini
 
 public class MainMenuManager : MonoBehaviour {
 
+    // fader script
+    public Fader fdr;
+
     // references to Submenus
     public GameObject _MainMenu;
     public GameObject _LevelsMenu;
@@ -109,11 +112,16 @@ public class MainMenuManager : MonoBehaviour {
             case RuntimePlatform.WindowsPlayer:
             case RuntimePlatform.OSXPlayer:
             case RuntimePlatform.LinuxPlayer:
+                QuitButton.SetActive(true);
+                break;
+            
+            // platforms without a quit button
             case RuntimePlatform.WindowsWebPlayer:
             case RuntimePlatform.WebGLPlayer:
             case RuntimePlatform.OSXWebPlayer:
-                QuitButton.SetActive(true);
+                QuitButton.SetActive(false);
                 break;
+
 
             // all other platforms default to no quit button
             default:

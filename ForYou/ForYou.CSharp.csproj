@@ -79,8 +79,10 @@
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
     <Compile Include="Assets\Scripts\DeathZone.cs" />
     <Compile Include="Assets\Scripts\FPSPause.cs" />
+    <Compile Include="Assets\Scripts\Fader.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LevelVictory.cs" />
+    <Compile Include="Assets\Scripts\LevelVictory3D.cs" />
     <Compile Include="Assets\Scripts\MainMenuManager.cs" />
     <Compile Include="Assets\Scripts\PlayerPrefManager.cs" />
     <Compile Include="Assets\zPRESET-Low Poly\Scripts\TextureOffset.cs" />

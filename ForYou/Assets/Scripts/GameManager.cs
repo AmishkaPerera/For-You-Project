@@ -17,11 +17,13 @@ public class GameManager : MonoBehaviour {
     public GameObject UIGamePaused;
     public GameObject UIGamePausedText;
     public Text UILevel;
-
+    public Fader fdr;
+    
     // private variables
     GameObject _player;
     Vector3 _spawnLocation;
     BlurOptimized _blur;
+ 
 
     // setup
     void Awake ()
@@ -129,10 +131,11 @@ public class GameManager : MonoBehaviour {
         StartCoroutine(LoadNextLevel());
     }
 
-    // load the nextLevel after delay
+    // load the nextLevel after delay -- modify delay to incoroperate fade
     IEnumerator LoadNextLevel()
     {
-        yield return new WaitForSeconds(1.0f);
+        float fadeTime = fdr.BeginFade(1);
+        yield return new WaitForSeconds(fadeTime);
         Application.LoadLevel(levelAfterComplete);
     }
 
