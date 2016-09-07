@@ -192,4 +192,12 @@ public class MainMenuManager : MonoBehaviour {
         Application.Quit();
     }
 
+    // Resets player prefs and returns to the main menu
+    public void ResetPrefs()
+    {
+        PlayerPrefs.DeleteAll();
+        ShowMenu("MainMenu");
+    }
+
+
 }

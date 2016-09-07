@@ -4,6 +4,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class LevelVictory3D : MonoBehaviour {
 
+    public GameManager gm;
     public GameObject explosion;
     public FirstPersonController PlayerObj;
 
@@ -35,6 +36,8 @@ public class LevelVictory3D : MonoBehaviour {
             if (Input.GetKeyDown("e"))
             {
                 print("IN");
+                //gm.LevelCompete();
+                GameManager.gm.LevelCompete();
 
             }
             // if explosion prefab is provide, then instantiate it

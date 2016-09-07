@@ -165,4 +165,10 @@ public class GameManager : MonoBehaviour {
         Application.LoadLevel(levelAfterQuit);
     }
 
+    public void PauseGameNoMenu()
+    {
+        Time.timeScale = 0f; // this pauses the game action
+        Camera.main.gameObject.GetComponent<BlurOptimized>().enabled = true;
+    }
+
 }
