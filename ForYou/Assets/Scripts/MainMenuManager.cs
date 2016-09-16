@@ -52,7 +52,6 @@ public class MainMenuManager : MonoBehaviour {
         // determine if Quit button should be shown
         displayQuitWhenAppropriate();
 
-        print("showing meunu");
         // Show the proper menu
         ShowMenu("MainMenu");
 

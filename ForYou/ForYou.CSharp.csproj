@@ -79,15 +79,23 @@
     <Compile Include="Assets\Scripts\Camera2DFollow.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
     <Compile Include="Assets\Scripts\DeathZone.cs" />
+    <Compile Include="Assets\Scripts\DestroyClones.cs" />
     <Compile Include="Assets\Scripts\FPSPause.cs" />
     <Compile Include="Assets\Scripts\Fader.cs" />
+    <Compile Include="Assets\Scripts\FinalLevelVictory.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\IntroText.cs" />
+    <Compile Include="Assets\Scripts\ItemPickup.cs" />
     <Compile Include="Assets\Scripts\LevelText3D.cs" />
     <Compile Include="Assets\Scripts\LevelVictory.cs" />
     <Compile Include="Assets\Scripts\LevelVictory3D.cs" />
     <Compile Include="Assets\Scripts\MainMenuManager.cs" />
+    <Compile Include="Assets\Scripts\MusicPlayer.cs" />
+    <Compile Include="Assets\Scripts\PlatformMover.cs" />
+    <Compile Include="Assets\Scripts\PlayMusic.cs" />
     <Compile Include="Assets\Scripts\PlayerPrefManager.cs" />
     <Compile Include="Assets\Scripts\UnlockMouse.cs" />
+    <Compile Include="Assets\zMedieval_House\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
     <Compile Include="Assets\zPRESET-Low Poly\Scripts\TextureOffset.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +180,9 @@
     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+    <None Include="Assets\zMedieval_House\Info.txt" />
+    <None Include="Assets\zNatureStarterKit2\Fonts\LICENSE.txt" />
+    <None Include="Assets\zNatureStarterKit2\info.txt" />
     <None Include="Assets\zPRESET-Low Poly\Scripts\Script read me.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

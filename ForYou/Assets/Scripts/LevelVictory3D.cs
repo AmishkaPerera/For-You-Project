@@ -4,7 +4,6 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class LevelVictory3D : MonoBehaviour {
 
-    public GameManager gm;
     public GameObject explosion;
     public FirstPersonController PlayerObj;
 

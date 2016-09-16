@@ -4,11 +4,11 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class UnlockMouse : MonoBehaviour {
 
-    public MouseLook ml; 
+    public FirstPersonController fps; 
     
     void Awake()
     {
-        ml.SetCursorLock(false);
+        fps.m_MouseLook.SetCursorLock(false);
     }
 	
 }

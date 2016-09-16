@@ -29,7 +29,7 @@ public class LevelText3D : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (_collided)
+        if (_collided && Time.timeScale > 0)
         {
             txt.SetActive(true);
         }

@@ -79,7 +79,7 @@ public class CharacterController2D : MonoBehaviour {
     private const string level6b = "Level 6b";
     private const string level6c = "Level 6c";
     private const string level7 = "Level 7";
-    private const string level9 = "Level 9";
+    private const string level12 = "Level 12";
 
 
     public string currentLevel;   
@@ -165,7 +165,7 @@ public class CharacterController2D : MonoBehaviour {
             case level7:
                 _canDJump = false;
                 break;
-            case level9:
+            case level12:
                 _canJump = false;
                 _canDJump = false;
                 _canFly = true;
@@ -299,6 +299,7 @@ public class CharacterController2D : MonoBehaviour {
     {
         if (other.gameObject.tag == "MovingPlatform")
         {
+            print("INININ");
             this.transform.parent = other.transform;
         }
     }
