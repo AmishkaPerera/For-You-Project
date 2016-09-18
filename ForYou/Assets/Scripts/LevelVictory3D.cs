@@ -32,7 +32,7 @@ public class LevelVictory3D : MonoBehaviour {
         // check if player is at door to complete level
         if (_collided)
         {
-            if (Input.GetKeyDown("e"))
+            if (Input.GetKeyDown("return"))
             {
                 print("IN");
                 //gm.LevelCompete();
