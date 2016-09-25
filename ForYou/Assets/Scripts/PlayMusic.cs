@@ -10,8 +10,6 @@ public class PlayMusic : MonoBehaviour {
     {
         AudioSource audsrc = GameObject.Find("Music Player").GetComponent<AudioSource>();
 
-        print(audsrc.clip.name);
-        print("clip" + ac.name);
         if (ac != null)
         {
             if (audsrc.clip.name != ac.name)

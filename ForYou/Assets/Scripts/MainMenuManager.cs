@@ -5,9 +5,6 @@ using UnityEngine.EventSystems; // include EventSystems namespace so can set ini
 
 public class MainMenuManager : MonoBehaviour {
 
-    // fader script
-    public Fader fdr;
-
     // references to Submenus
     public GameObject _MainMenu;
     public GameObject _LevelsMenu;
@@ -24,6 +21,7 @@ public class MainMenuManager : MonoBehaviour {
     public GameObject TrophiesDefaultButton;
     public GameObject ResetDefaultButton;
     public GameObject QuitButton;
+    public GameObject CreditsButton;
 
     // list the level names
     public string[] LevelNames;

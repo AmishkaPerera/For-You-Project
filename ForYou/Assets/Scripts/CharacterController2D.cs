@@ -67,6 +67,7 @@ public class CharacterController2D : MonoBehaviour {
     bool _canJump = true;
     bool _canDJump = true;
     bool _canFly = false;
+
     private const string level1 = "Level 1";
     private const string level2 = "Level 2";
     private const string level3 = "Level 3";
@@ -80,7 +81,6 @@ public class CharacterController2D : MonoBehaviour {
     private const string level6c = "Level 6c";
     private const string level7 = "Level 7";
     private const string level12 = "Level 12";
-
 
     public string currentLevel;   
 

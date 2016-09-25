@@ -10,10 +10,9 @@ public class MusicPlayer : MonoBehaviour {
         get { return mp; }
     }
 
+    // keep singlton object
     void Awake()
     { 
-        
-
         if (mp != null && mp != this)
         {
             Destroy(this.gameObject);

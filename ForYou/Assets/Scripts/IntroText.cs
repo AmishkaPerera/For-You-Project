@@ -4,13 +4,11 @@ using System.Collections;
 public class IntroText : MonoBehaviour {
 
     public GameObject txt;
-
     bool _collided = false;
 
-
+    // displays text UI when camer collides with invisible objects
     void OnTriggerEnter(Collider other)
     {
-        print("collideddd");
         if ((other.tag == "MainCamera"))
         {
             _collided = true;

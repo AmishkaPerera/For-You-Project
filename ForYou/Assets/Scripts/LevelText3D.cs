@@ -6,10 +6,8 @@ using UnityStandardAssets.ImageEffects;
 public class LevelText3D : MonoBehaviour {
 
     public GameObject txt;
-
     bool _collided = false;
-
-
+    
     void OnTriggerEnter(Collider other)
     {
         if ((other.tag == "Player") && (other.gameObject.GetComponent<FirstPersonController>().enabled = true))
